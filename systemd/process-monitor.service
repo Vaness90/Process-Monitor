@@ -1,0 +1,15 @@
+[Unit]
+Description=Process Monitor
+After=network.target
+
+[Service]
+User=<your_user>
+Group=<your_group>
+Type=simple
+WorkingDirectory=<path_to_your_project_directory>
+ExecStart=<path_to_your_project_directory>/build/process-monitor -p <process_name_1> -p <process_name_2>
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

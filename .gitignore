@@ -1,0 +1,21 @@
+# Binary files and build directory
+/build
+
+# Go build artifacts
+*.o
+*.a
+*_test.go
+
+# Dependency directories
+vendor/
+
+# IDE files (e.g., JetBrains GoLand, Visual Studio Code)
+.idea/
+.vscode/
+
+# Other common files
+*.log
+*.swp
+*.bak
+*.tmp
+*~
